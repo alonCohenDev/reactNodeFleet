@@ -1,0 +1,139 @@
+$dark-pri: #0B5AA2;
+
+.FleetContainer {
+  /* height: 100%; */
+  height: 95vh;
+  display: flex;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #128CFC; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(15, 18, 202); 
+}
+
+.contentArea{
+  display: flex;
+  height: auto;
+  width: 100%;
+}
+
+.UnitsInfo {
+  height: 100%;
+  margin-left: 5px;
+  margin-right: 5px;
+  display: flex;
+  flex-direction:column;
+  justify-content: flex-start;
+  width: 250px;
+  background: white;
+  box-shadow: 0 3px 6px rgba(black,0.16), 0 3px 6px rgba(black,0.23);
+  border-top: 10px solid $dark-pri;
+}
+
+.markerDiv{
+  height: 10px;
+  width: 10px;
+  background-color: crimson;
+}
+
+.unitsInfoP{
+  padding: 5px 20px;
+  
+  color: #3875af;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.unitsInfoPSmall{
+
+  font-size: 12px;
+}
+
+.unitsInfoInput{
+  border-bottom: solid #3875af 1px;
+  border-top:none;
+  border-left:none;
+  border-right:none;
+  outline: none;
+  width: 35%;
+}
+
+.unitsInfoSelect{
+  border: none;
+  outline: none;
+}
+
+.unitsInfoEditingSection{
+  display: flex;
+   flex-direction: row;
+}
+
+.unitsInfoButtonsSection{
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  
+}
+
+.danger{
+  background: linear-gradient(to bottom right, #EF4765, #FF9A5A);
+}
+
+.regular{
+  background: linear-gradient(to bottom right, #3875af, #15043d);
+}
+
+.btn {
+  margin-left: 20px;
+  border: 0;
+  border-radius: 12px;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system,system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 2.5;
+  outline: transparent;
+  padding: 0 1rem;
+  text-align: center;
+  text-decoration: none;
+  transition: box-shadow .2s ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  width: 80%;;
+}
+
+.btn.danger:not([disabled]):hover {
+  box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+}
+
+.btn.regular:not([disabled]):hover {
+  box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(67, 52, 151, 0.5), .125rem .125rem 1rem rgba(35, 13, 70, 0.5);
+}
+
+
+.mapWrapper{
+  height: 100%;
+  width: 100%;
+}
